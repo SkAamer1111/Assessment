@@ -32,7 +32,8 @@ jobs:
         run: docker image ls
       - name: trigger jenkins
         if: success()
-        run: curl -X POST -u "${{ secrets.JENKINS_USERNAME }}:${{ secrets.JENKINS_TOKEN }}" "${{ secrets.JENKINS_URL }}/job/pipelineA/build" 
+        run: curl -X POST -u "${{ secrets.JENKINS_USERNAME }}:${{ secrets.JENKINS_TOKEN }}" "${{ secrets.JENKINS_URL }}/job/CICD
+/build" 
       
 
 
