@@ -125,7 +125,7 @@ pipeline {
                                 aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
                                 aws configure set region ap-southeast-2
 
-                                aws s3 cp deploy.log s3://deployment-tc-logs/deploy-$BUILD_NUMBER.log
+                                aws s3 cp deploy.log s3://test-jenkins-tc/deploy-$BUILD_NUMBER.log
                             '''
                         }
                     }
